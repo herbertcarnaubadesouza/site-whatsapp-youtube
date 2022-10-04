@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa; /* or add it to the track */
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2F3D53;
+    border-radius: 100vw;
+
+    transition: filter 0.2s ease;    
+}
