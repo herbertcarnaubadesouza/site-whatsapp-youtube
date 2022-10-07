@@ -148,6 +148,7 @@ body::-webkit-scrollbar-thumb {
 
 .banner img{
   object-fit: cover;
+  max-width: 380px;
   border-radius: 10px;
 }
 
