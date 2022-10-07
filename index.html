@@ -1,14 +1,156 @@
 <html>
     <head>
         <meta charset="utf-8"/>        
-        <link rel="stylesheet" type="text/css" href= "./styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href= "./styles.css">
     </head>
     <body>
-        <div class="container">
-            
+        <div class="container" id="home">
+            <div class="mobileHeader">
+                <img class="logoHeader" src="./assets/images/logoEmployer.png"/>
+                <img class="hamburguerMenu" src="./assets/images/menu.svg">
+                <div class="menuActive">
+                  <div class="close">
+                    <img class="closeBtn" src="./assets/images/x.svg">
+                  </div>
+                  <div class="navigationlinks">                  
+                    <a class="headerLinks" href="#meuWorkflow">Home</a>
+                    <a class="headerLinks" href="#servicos">Conheça o serviço</a>
+                    <a class="headerLinks" href="#gerenciamento">Plataformas</a>
+                    <a class="headerLinks" href="#frame">Avaliações</a>
+                    <a class="headerLinks" href="#frame">Quem somos</a>
+                  </div>
+                    <button>ENTRAR</button>                  
+                </div>
+                <div class="overlay"></div>
+              </div>
+            <div class="desktopHeader">
+              <img class="logoHeader" src="./assets/images/logoEmployer.png"/>
+          </div>
+            <div class="banner">
+                <h1>Seu fluxo de trabalho mais simples e ágil</h1>
+                <span>Sistema de aprovação rápido, intuitivo e tecnológico.</span>
+                <img class="hamburguerMenu" src="./assets/images/bannerImage.png">
+            </div>
         </div>
+        <div class="meuWorkflow" id="meuWorkflow">
+            <h2>Conheça o Meu Workflow</h2>
+            <p >Meu WorkFlow é um sistema eficiente e prático para a execução e organização do fluxo de trabalho da sua empresa. A ferramenta possui uma tecnologia capaz de automatizar os processos e diminuir as atividades manuais, dando mais tempo útil para o empregado. Além disso, a personalização das etapas permite que sejam atendidas as necessidades de cada cliente, tornando a experiência mais intuitiva e garantindo a aprovação das demandas de forma mais rápida.</p>
+            <p >Meu WorkFlow oferece uma visão ampla do negócio, perfeito para profissionais que lidam diariamente com altas solicitações e gestão de pessoas. </p>
+            <span></span>
+            <img src="./assets/images/meuWorkflowImg.png">
+        </div>
+        <div class="servicos" id="servicos">
+            <h2 class="firstTitle">Integração de serviços de RH</h2>
+            <span class="firstSubTitle">Um sistema completo para gerenciamento de processos e aprovações</span>            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">         
+                    <div class="content">       
+                      <img src="./assets/images/appSettings.png">
+                      <span>Solicitações customizada conforme a necessidade do cliente.</span>
+                    </div>
+                  </div>                  
+                  <div class="swiper-slide">         
+                    <div class="content">       
+                      <img src="./assets/images/Autorenew.png">
+                      <span>Possui integração com todos os sistemas Employer</span>
+                    </div>
+                  </div>                  
+                  <div class="swiper-slide">         
+                    <div class="content">       
+                      <img src="./assets/images/Balance.png">
+                      <span>Processos de acordo com a legislação trabalhista.</span>
+                    </div>
+                  </div>                  
+                  <div class="swiper-slide">         
+                    <div class="content">       
+                      <img src="./assets/images/Lock.png">
+                      <span>Atende as determinações da LGPD.</span>
+                    </div>
+                  </div>                  
+                </div>                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>                             
+            </div>              
+        </div>
+        <div class="gerenciamento" id="gerenciamento">               
+          <h2 class="secondTitle">Fácil gerenciamento e uso</h2>
+          <span class="secondSubTitle">Você encontrará um sistema de fácil gerenciamento e uso. Configuração personalizada em todas as etapas, flexibilidade e agilidade no gerenciamento das informações. Customização dos fluxos de solicitações de férias, justificativa de ponto, folhas de pagamento e muito mais.</span>
+          <img src="./assets/images/gerenciamento.png">
+        </div>
+        <div class="adaptavel" id="adaptavel">
+          <h2>Adaptável a todo tipo de uso</h2>
+          <span>Tenha o serviço disponível na palma da sua mão! Nossa plataforma atende todos os tipos de dispositivos. Use no Desktop, Tablet ou Celular.</span>
+        </div>
+        <div class="frame" id="frame">
+          <img src="./assets/images/frame.png">
+        </div>
+        <div class="avaliacoes" id="avaliacoes">
+          <h2>Quem usa recomenda</h2>
+          <span>Veja o que estão falando sobre o nosso produto</span>
+          <div class="swiper-avaliacoes">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">         
+                <div class="avaliacoes-content">       
+                  <img src="./assets/images/estrelas.png">
+                  <span>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</span>
+                  <div class="cliente">
+                    <img src="./assets/images/cliente1.png">
+                    <div class="cliente-description">
+                      <h5>Robson Simões</h5>
+                      <span>Supervisor de logística</span>
+                    </div>
+                  </div>
+                </div>
+              </div>                  
+              <div class="swiper-slide">         
+                <div class="avaliacoes-content">       
+                  <img src="./assets/images/estrelas.png">
+                  <span>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</span>
+                  <div class="cliente">
+                    <img src="./assets/images/cliente2.png">
+                    <div class="cliente-description">
+                      <h5>Robson Simões</h5>
+                      <span>Supervisor de logística</span>
+                    </div>
+                  </div>
+                </div>
+              </div>                  
+              <div class="swiper-slide">         
+                <div class="avaliacoes-content">       
+                  <img src="./assets/images/estrelas.png">
+                  <span>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</span>
+                  <div class="cliente">
+                    <img src="./assets/images/cliente3.png">
+                    <div class="cliente-description">
+                      <h5>Robson Simões</h5>
+                      <span>Supervisor de logística</span>
+                    </div>
+                  </div>
+                </div>
+              </div>                                                   
+            </div>                
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>                             
+        </div> 
+        </div>
+
+        <div class="footer">
+          <span>© Powered By Employer - Todos os direitos reservados</span>
+          <span><a href="https://employer.com.br/politica-de-privacidade/">Política de privacidade</a></span>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>
