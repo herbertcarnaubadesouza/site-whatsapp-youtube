@@ -53,6 +53,8 @@ const swiper = new Swiper('.swiper', {
           el: ".swiper-pagination"
         }
   });
+  
+
 
   const swiperAvaliacoes = new Swiper('.swiper-avaliacoes', {
     paginationClickable: true,
@@ -78,4 +80,31 @@ const swiper = new Swiper('.swiper', {
         pagination: {
           el: ".swiper-pagination"
         }
+  });
+
+  const swiperDesktop = new Swiper('.swiper-desktop', {
+    paginationClickable: true,
+    spaceBetween: 180,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 0,
+      slideShadows: false,          
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    }
   });

@@ -133,6 +133,14 @@ body::-webkit-scrollbar-thumb {
   gap: 1rem;
 }
 
+.banner-content{
+  min-width: 320px;
+}
+
+.banner-content h1{
+    margin-bottom: 1rem !important;
+}
+
 .banner h1{
   font-weight: bold;
   font-size: 2.2rem;
@@ -163,6 +171,15 @@ body::-webkit-scrollbar-thumb {
   gap: 2rem;
 }
 
+.meuWorkflowContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.meuWorkflow-content h2,p{
+  margin-bottom: 2rem;
+}
+
 .meuWorkflow span::before{
   display: flex;
   justify-content: flex-end;
@@ -176,7 +193,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .meuWorkflow img{
-  margin-top: -2rem;
   object-fit: cover;
   max-width: 380px;
 }
@@ -185,6 +201,10 @@ body::-webkit-scrollbar-thumb {
   padding-top: 4rem;
   padding-inline: 1.6875rem;
   text-align: center;
+}
+
+.desktopSection{
+  display: none;
 }
 
 .servicos .firstTitle{
@@ -203,6 +223,10 @@ body::-webkit-scrollbar-thumb {
 .swiper {
   height: 260px;
   --swiper-theme-color: #2F3D53;
+}
+
+.swiper-desktop{
+  display: none;
 }
 
 .swiper-slide{
@@ -253,6 +277,12 @@ body::-webkit-scrollbar-thumb {
   gap: 1.5rem;
 }
 
+.gerenciamento-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 
 .gerenciamento h2{
   font-weight: 700;
@@ -270,15 +300,19 @@ body::-webkit-scrollbar-thumb {
 
 .gerenciamento img{
   max-width: 380px;
+  /* margin-top: -14rem; */
+  z-index: 1;
   object-fit: cover;
 }
 
-.gerenciamento::after{
+.overlay-image::after{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: -15rem;
+  margin-left: -2rem;
+  align-items: left;
   z-index:-1;
-  margin-top: -14rem;
-  width: 100%;
+  margin-bottom: -2rem;
   content: url(./assets/images/argolas.png);
 }
 
@@ -341,6 +375,11 @@ body::-webkit-scrollbar-thumb {
 .swiper-avaliacoes{
   height: 100%;
   --swiper-theme-color: #2F3D53;
+}
+
+
+.swiper-avaliacoes-desktop{
+  display:none;
 }
 
 /* AVALIACOES CONTENT */
@@ -420,12 +459,306 @@ body::-webkit-scrollbar-thumb {
   color:#fff;
 }
 
+.footer-divisor{
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
+
+  .banner{
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner img{
+    max-width: 570px;
+  }
+
+  .meuWorkflow span::before {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30%;
+    margin-bottom: -16rem;
+    content: url(./assets/images/computerMobileComplement.png);
+  }
+
+  .gerenciamento {
+    text-align: center;
+    align-items: center;
+  }  
+}
+
 
 @media only screen and (min-width: 1024px){
   .mobileHeader{
     display:none;
   }
   .desktopHeader{
-    display: flex;;
+    padding-inline: 3rem;
+    max-width: 1440px;
+    margin-inline:auto;
+    align-items:center;
+    justify-content:space-between;
+    display: flex;
+    
   }
+
+  .desktopHeader ul{
+    float:right;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .desktopHeader li{
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .desktopHeader button{
+    cursor: pointer;
+    min-width: 100px;
+    padding-block: 0.5rem;
+    background: transparent;
+    border-radius: 4px;
+    color: #51B4D9;
+    border: 1px solid #51B4D9;
+  }
+
+
+  .banner{
+    text-align: left;
+    padding-block: 5rem;
+    padding-inline: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 1440px;  
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .banner h1{
+    font-size: 3.5rem;
+    line-height: 77px;
+  }
+  
+  .banner span{  
+    font-weight: 300;
+    line-height: 45px;
+    font-size: 2rem;
+  }
+  
+  .banner img{
+    object-fit: cover;
+    max-width: 570px;
+    border-radius: 10px 10px 10px 200px;
+  }
+
+  /* MEU WORKFLOW */
+
+  .meuWorkflow{
+    padding-block: 3.875rem;
+    padding-inline: 3rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .meuWorkflowContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: max(0px, (100% - 1440px)/2); 
+  }
+  
+  .meuWorkflow span::before{
+    display: flex;
+    justify-content: center;
+    margin-left: -15rem;
+    margin-top: -15rem;
+  }
+  
+  .meuWorkflow h2{
+    font-size: 2.5rem;
+  }
+  
+  .meuWorkflow img{
+    margin-top: 1rem;
+    margin-left: -10rem;
+    margin-top: -1rem;
+    object-fit: cover;
+    max-width: 760px;
+  }
+
+
+  /* SERVIÇOS */
+
+  .servicos .firstTitle{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .swiper{
+    display: none;
+  }  
+
+  .desktopSection{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin-inline: auto;
+    margin-block: 5rem;
+    cursor:pointer;
+  }
+
+  .desktopSection-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    gap: 1.3rem;
+    border: 0.8px solid #D8DEE0;
+    padding-block: 1.5rem;
+    padding-inline: 2rem;
+    min-height:13rem;
+    max-width: 15rem;
+  }
+
+  .desktopSection-content:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .desktopSection-content img{
+    max-width: 36px;
+  }
+
+  /* GERENCIAMENTO */
+
+
+  .gerenciamento{
+    padding-top: 2rem;
+    padding-left: 3rem; 
+    margin-left: max(0px, (100% - 1440px)/2); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .gerenciamento-content{
+    display: flex;
+    flex-direction: column;   
+    min-width: 640px;
+    gap: 1.5rem;
+  }
+  
+  
+  .gerenciamento h2{
+    font-size: 2.5rem;
+  }
+  
+  .gerenciamento img{
+    max-width: 1100px;
+    object-fit: cover;
+  }
+
+  
+  .overlay-image::after{
+    left:49%;
+    position: absolute;
+    align-items: flex-start; 
+    z-index:-1;
+    margin-top: -12rem;
+    content: url(./assets/images/argolas.png);
+  }  
+
+
+  .adaptavel{
+    margin-inline:auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    max-width: 42rem;
+  }
+
+  .adaptavel h2{
+    font-size: 2.5rem;
+  }
+
+  .adaptavel span{
+    letter-spacing: 0.015em;
+  }
+
+  .frame img{
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  .avaliacoes{
+    max-width: 1440px;
+    margin-inline:auto;
+  }
+
+  .avaliacoes h2{
+    font-size: 2.5rem;
+    gap: 2rem;
+  }
+
+  .swiper-avaliacoes{
+    display:none;
+  }  
+
+  .swiper-desktop{
+    display: block;
+    --swiper-theme-color: #2F3D53;
+    margin-block: 3rem;
+  }
+
+  .swiper-desktop .avaliacoes-content{
+    max-width: 100%;
+    min-width: 320px;
+    min-height:308px;
+  }
+
+  .swiper-3d .swiper-slide{
+    transform-style: flat;
+  }
+
+  .swiper-desktop .avaliacoes-content img {
+    max-width: 9rem;
+    object-fit: cover;
+  }
+
+  .swiper-desktop .avaliacoes-content span {
+    font-size: 1rem;
+  }
+
+  .cliente img{
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+  }
+
+  .cliente-description h5 {
+    font-size: 1rem;
+  }
+
+  .avaliacoes-content{
+    gap: 2rem;
+  }
+
+  .footer{
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    padding-block: 2rem;
+  }
+
+  .footer-divisor{
+    display: block;
+  }
+
 }
