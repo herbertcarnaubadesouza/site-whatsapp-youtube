@@ -12,28 +12,30 @@
         <link rel="stylesheet" type="text/css" href= "./styles.css">
     </head>
     <body>
-        <div class="container" id="home">
+        <section class="container" id="home">
             <div class="mobileHeader">
-                <img class="logoHeader" src="./assets/images/logoEmployer.png"/>
+                <img class="logoHeader" src="./assets/images/logoEmployer.png">
                 <img class="hamburguerMenu" src="./assets/images/menu.svg">
                 <div class="menuActive">
                   <div class="close">
                     <img class="closeBtn" src="./assets/images/x.svg">
                   </div>
-                  <div class="navigationlinks">                  
-                    <a class="headerLinks" href="#meuWorkflow">Home</a>
-                    <a class="headerLinks" href="#servicos">Conheça o serviço</a>
-                    <a class="headerLinks" href="#gerenciamento">Plataformas</a>
-                    <a class="headerLinks" href="#frame">Avaliações</a>
-                    <a class="headerLinks" href="#frame">Quem somos</a>
-                  </div>
+                  <nav class="navigationlinks"> 
+                    <ul>                 
+                      <li><a class="headerLinks" href="#meuWorkflow">Home</a></li>
+                      <li><a class="headerLinks" href="#servicos">Conheça o serviço</a></li>
+                      <li><a class="headerLinks" href="#gerenciamento">Plataformas</a></li>
+                      <li><a class="headerLinks" href="#frame">Avaliações</a></li>
+                      <li><a class="headerLinks" href="#frame">Quem somos</a></li>
+                    </ul>
+                  </nav>
                     <button>ENTRAR</button>                  
                 </div>
                 <div class="overlay"></div>
               </div>
             <div class="desktopHeader">
-              <img class="logoHeader" src="./assets/images/logoEmployer.png"/>
-              <nav aria-label="Principal" className={styles.navigationLinks}>
+              <img class="logoHeader" src="./assets/images/logoEmployer.png">
+              <nav aria-label="Principal">
                 <ul>
                   <li>
                     Home
@@ -53,7 +55,7 @@
                   <button>ENTRAR</button>
                 </ul>
               </nav>
-          </div>
+            </div>
             <div class="banner">
               <div class="banner-content">
                 <h1>Seu fluxo de trabalho mais simples e ágil</h1>
@@ -61,8 +63,8 @@
               </div>
                 <img class="hamburguerMenu" src="./assets/images/bannerImage.png">
             </div>
-        </div>
-        <div class="meuWorkflow" id="meuWorkflow">
+        </section>
+        <section class="meuWorkflow" id="meuWorkflow">
           <div class="meuWorkflowContainer">
             <div class="meuWorkflow-content">
               <h2>Conheça o Meu Workflow</h2>
@@ -72,41 +74,40 @@
               <span></span>
               <img src="./assets/images/meuWorkflowImg.png">
           </div>
-        </div>
-        <div class="servicos" id="servicos">
+        </section>
+        <section class="servicos" id="servicos">
             <h2 class="firstTitle">Integração de serviços de RH</h2>
-            <span class="firstSubTitle">Um sistema completo para gerenciamento de processos e aprovações</span>            
+            <p class="firstSubTitle">Um sistema completo para gerenciamento de processos e aprovações</p>            
             <div class="swiper">
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
+                <div class="swiper-wrapper">                  
                   <div class="swiper-slide">         
                     <div class="content">       
                       <img src="./assets/images/appSettings.png">
-                      <span>Solicitações customizada conforme a necessidade do cliente.</span>
+                      <p>Solicitações customizada conforme a necessidade do cliente.</p>
                     </div>
                   </div>                  
                   <div class="swiper-slide">         
                     <div class="content">       
                       <img src="./assets/images/Autorenew.png">
-                      <span>Possui integração com todos os sistemas Employer</span>
+                      <p>Possui integração com todos os sistemas Employer</p>
                     </div>
                   </div>                  
                   <div class="swiper-slide">         
                     <div class="content">       
                       <img src="./assets/images/Balance.png">
-                      <span>Processos de acordo com a legislação trabalhista.</span>
+                      <p>Processos de acordo com a legislação trabalhista.</p>
                     </div>
                   </div>                  
                   <div class="swiper-slide">         
                     <div class="content">       
                       <img src="./assets/images/Lock.png">
-                      <span>Atende as determinações da LGPD.</span>
+                      <p>Atende as determinações da LGPD.</p>
                     </div>
                   </div>                  
                   <div class="swiper-slide">         
                     <div class="content">       
                       <img src="./assets/images/people.png">
-                      <span>Sistema compatível com todos os segmentos das empresas</span>
+                      <p>Sistema compatível com todos os segmentos das empresas</p>
                     </div>
                   </div>                  
                 </div>                
@@ -117,55 +118,54 @@
             <div class="desktopSection">
               <div class="desktopSection-content">
                 <img src="./assets/images/appSettings.png">
-                <span>Solicitações customizada conforme a necessidade do cliente.</span>
+                <p>Solicitações customizada conforme a necessidade do cliente.</p>
               </div>
               <div class="desktopSection-content">
                 <img src="./assets/images/Autorenew.png">
-                <span>Possui integração com todos os sistemas Employer</span>
+                <p>Possui integração com todos os sistemas Employer</p>
               </div>
               <div class="desktopSection-content">
                 <img src="./assets/images/Balance.png">
-                <span>Processos de acordo com a legislação trabalhista.</span>
+                <p>Processos de acordo com a legislação trabalhista.</p>
               </div>
               <div class="desktopSection-content">
                 <img src="./assets/images/Lock.png">
-                <span>Atende as determinações da LGPD.</span>
+                <p>Atende as determinações da LGPD.</p>
               </div>              
               <div class="desktopSection-content">
                 <img src="./assets/images/people.png">
-                <span>Sistema compatível com todos os segmentos das empresas</span>
+                <p>Sistema compatível com todos os segmentos das empresas</p>
               </div>              
             </div>
-        </div>
-        <div class="gerenciamento" id="gerenciamento">  
+          </section>
+        <section class="gerenciamento" id="gerenciamento">  
           <div class="gerenciamento-content">             
             <h2 class="secondTitle">Fácil gerenciamento e uso</h2>
-            <span class="secondSubTitle">Você encontrará um sistema de fácil gerenciamento e uso. Configuração personalizada em todas as etapas, flexibilidade e agilidade no gerenciamento das informações. Customização dos fluxos de solicitações de férias, justificativa de ponto, folhas de pagamento e muito mais.</span>
+            <p class="secondSubTitle">Você encontrará um sistema de fácil gerenciamento e uso. Configuração personalizada em todas as etapas, flexibilidade e agilidade no gerenciamento das informações. Customização dos fluxos de solicitações de férias, justificativa de ponto, folhas de pagamento e muito mais.</p>
           </div>
           <img src="./assets/images/gerenciamento.png">
           <div class="overlay-image"></div>
-        </div>
-        <div class="adaptavel" id="adaptavel">
+        </section>
+        <section class="adaptavel" id="adaptavel">
           <h2>Adaptável a todo tipo de uso</h2>
-          <span>Tenha o serviço disponível na palma da sua mão! Nossa plataforma atende todos os tipos de dispositivos. Use no Desktop, Tablet ou Celular.</span>
-        </div>
-        <div class="frame" id="frame">
+          <p>Tenha o serviço disponível na palma da sua mão! Nossa plataforma atende todos os tipos de dispositivos. Use no Desktop, Tablet ou Celular.</p>
+        </section>
+        <section class="frame" id="frame">
           <img src="./assets/images/frame.png">
-        </div>
-        <div class="avaliacoes" id="avaliacoes">
+        </section>
+        <section class="avaliacoes" id="avaliacoes">
           <h2>Quem usa recomenda</h2>
-          <span>Veja o que estão falando sobre o nosso produto</span>
+          <p>Veja o que estão falando sobre o nosso produto</p>
           <div class="swiper-avaliacoes">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
+            <div class="swiper-wrapper">              
               <div class="swiper-slide">         
                 <div class="avaliacoes-content">       
                   <img src="./assets/images/estrelas.png">
-                  <span>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</span>
+                  <p>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</p>
                   <div class="cliente">
                     <img src="./assets/images/cliente1.png">
                     <div class="cliente-description">
-                      <h5>Robson Simões</h5>
+                      <p>Robson Simões</p>
                       <span>Supervisor de logística</span>
                     </div>
                   </div>
@@ -174,11 +174,11 @@
               <div class="swiper-slide">         
                 <div class="avaliacoes-content">       
                   <img src="./assets/images/estrelas.png">
-                  <span>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</span>
+                  <p>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</p>
                   <div class="cliente">
                     <img src="./assets/images/cliente2.png">
                     <div class="cliente-description">
-                      <h5>Robson Simões</h5>
+                      <p>Robson Simões</p>
                       <span>Supervisor de logística</span>
                     </div>
                   </div>
@@ -187,12 +187,12 @@
               <div class="swiper-slide">         
                 <div class="avaliacoes-content">       
                   <img src="./assets/images/estrelas.png">
-                  <span>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</span>
+                  <p>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</p>
                   <div class="cliente">
                     <img src="./assets/images/cliente3.png">
                     <div class="cliente-description">
-                      <h5>Robson Simões</h5>
-                      <span>Supervisor de logística</span>
+                      <p>Robson Simões</p>
+                      <p>Supervisor de logística</p>
                     </div>
                   </div>
                 </div>
@@ -203,16 +203,15 @@
             <div class="swiper-button-next"></div>                             
           </div> 
           <div class="swiper-desktop">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
+            <div class="swiper-wrapper">              
               <div class="swiper-slide">         
                 <div class="avaliacoes-content">       
                   <img src="./assets/images/estrelas.png">
-                  <span>O gerenciamento das informações ficou muito mais prático! Eu adoro que a tecnologia facilita as aprovações dos processos e torna meu dia muito mais fluído. Recomendo de olhos fechados!</span>
+                  <p>O gerenciamento das informações ficou muito mais prático! Eu adoro que a tecnologia facilita as aprovações dos processos e torna meu dia muito mais fluído. Recomendo de olhos fechados!</p>
                   <div class="cliente">
                     <img src="./assets/images/cliente1.png">
                     <div class="cliente-description">
-                      <h5>Renato Costa</h5>
+                      <p>Renato Costa</p>
                       <span>Assistente de RH</span>
                     </div>
                   </div>
@@ -221,11 +220,11 @@
               <div class="swiper-slide">         
                 <div class="avaliacoes-content">       
                   <img src="./assets/images/estrelas.png">
-                  <span>Meu WorkFlow é a minha ferramenta preferida! O fluxo de aprovação ficou muito mais prático, sem contar que todos os dados que preciso do meu colaborador encontro em um só lugar. É perfeito!</span>
+                  <p>Meu WorkFlow é a minha ferramenta preferida! O fluxo de aprovação ficou muito mais prático, sem contar que todos os dados que preciso do meu colaborador encontro em um só lugar. É perfeito!</p>
                   <div class="cliente">
                     <img src="./assets/images/cliente2.png">
                     <div class="cliente-description">
-                      <h5>Isabela Freitas</h5>
+                      <p>Isabela Freitas</p>
                       <span>Auxiliar Contábil</span>
                     </div>
                   </div>
@@ -234,11 +233,11 @@
               <div class="swiper-slide">         
                 <div class="avaliacoes-content">       
                   <img src="./assets/images/estrelas.png">
-                  <span>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</span>
+                  <p>É nítido quanto o Meu Workflow facilita a vida de quem tem diversos processos para gerenciar. Sem dúvidas a plataforma atende as minhas demandas!.</p>
                   <div class="cliente">
                     <img src="./assets/images/cliente3.png">
                     <div class="cliente-description">
-                      <h5>Robson Simões</h5>
+                      <p>Robson Simões</p>
                       <span>Supervisor de logística</span>
                     </div>
                   </div>
@@ -249,13 +248,13 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>                             
           </div> 
-        </div>
+        </section>
 
-        <div class="footer">
+        <section class="footer">
           <span>© Powered By Employer - Todos os direitos reservados</span>
           <span class="footer-divisor">|</span>
           <span><a href="https://employer.com.br/politica-de-privacidade/">Política de privacidade</a></span>
-        </div>
+        </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script type="text/javascript" src="./script.js"></script>
     </body>
