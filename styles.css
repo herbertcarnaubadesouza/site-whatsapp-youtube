@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
   width: 60px;
   height: 60px;
   bottom: 40px;
-  right: 30px;
+  right: 23px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
@@ -806,6 +806,11 @@ body::-webkit-scrollbar-thumb {
 
   .footer-divisor{
     display: block;
+  }
+
+  .whatsapp-link{
+    bottom: 40px;
+    right: 30px;
   }
 
 }
