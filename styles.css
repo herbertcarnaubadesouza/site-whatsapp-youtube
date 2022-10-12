@@ -27,6 +27,7 @@ body::-webkit-scrollbar-thumb {
 }
 .whatsapp-link {
   position: fixed;
+  cursor:pointer;
   width: 60px;
   height: 60px;
   bottom: 40px;
