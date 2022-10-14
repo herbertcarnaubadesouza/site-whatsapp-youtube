@@ -2,7 +2,6 @@ const hamburger = document.querySelector(".hamburguerMenu");
 const menu = document.querySelector(".menuActive");
 const overlay = document.querySelector(".overlay");
 const closeBtn = document.querySelector(".closeBtn");
-const headerLinks = document.querySelector(".headerLinks");
 
 
 hamburger.addEventListener("click", () => {
@@ -20,13 +19,14 @@ closeBtn.addEventListener("click", () => {
   menu.classList.toggle("active")
 })
 
-headerLinks.addEventListener("click", () => {
+
+const headerLinks = document.querySelectorAll(".headerLinks").forEach(e => e.addEventListener('click',() => {
   overlay.classList.remove("active")
   menu.classList.toggle("active")
-})
-
-
-
+}));
+  
+  
+  
 
 const swiper = new Swiper('.swiper', {
     paginationClickable: true,
