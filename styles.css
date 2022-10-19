@@ -174,8 +174,12 @@ ul {
     margin-bottom: 1rem !important;
 }
 
-.banner h1{
+.banner-content strong{
   font-weight: bold;
+}
+
+.banner h1{
+  font-weight: normal;
   font-size: 2.2rem;
   color: #2F3D53;
   line-height: 3rem;
