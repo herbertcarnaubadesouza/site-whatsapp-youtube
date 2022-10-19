@@ -487,6 +487,95 @@ ul {
   font-size: 0.7rem;
 }
 
+.titleDuvidasSection{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: #2F3D53;
+  margin-bottom: 3.3rem;
+}
+
+.titleDuvidasSection h2{
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+
+.titleDuvidasSection p{
+  font-size: 1.1rem;
+  margin-bottom: 0rem;
+}
+
+/* ACCORDION */
+
+
+.accordionWrapper{
+  display: flex;
+  justify-content: center;
+  max-width: 360px;
+  margin-inline:auto;
+  margin-bottom: 11.3rem;
+}
+
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion_item {
+  border-radius: 5px;
+}
+
+.accordion_item:hover {
+  opacity: 0.9;
+}
+
+.accordion_header {
+  padding-block: 10px;
+  padding-inline: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F3F5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #4C5D6B;
+  text-align: left;
+}
+
+.accordion_content {
+  margin-left: 10px;
+  margin-top: 14px;
+  margin-right: 15px;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s ease;
+  font-size: 14px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #4C5D6B;
+}
+
+.active {
+  padding-bottom: 10px;
+}
+
+ .icon {
+  font-weight: 600;
+}
+
+
+
+/* ACCORDION */
 .footer{
   display: flex;
   flex-direction: column;
@@ -811,6 +900,28 @@ ul {
   .avaliacoes-content{
     gap: 2rem;
   }
+
+  .accordionWrapper{
+    max-width: 630px;
+  }
+
+  .accordion_header {
+    padding-block: 10px;
+    padding-inline: 22px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F3F5;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #4C5D6B;
+    text-align: center;
+  }
+  
 
   .footer{
     flex-direction: row;
