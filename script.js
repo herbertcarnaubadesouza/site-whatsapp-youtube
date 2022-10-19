@@ -144,7 +144,7 @@ function VerifyActive(item, content, content_actived) {
   }
 
   if (content !== content_actived) {
-    icon_item.innerHTML = "-";
+    icon_item.innerHTML = `<img class="logoHeader" src="./assets/images/arrow.svg" alt="Meu Workflow">`;
     content.classList.add("active");
     content.style.height = content.scrollHeight + 10 + "px";
   }
