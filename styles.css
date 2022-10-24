@@ -448,14 +448,35 @@ ul {
 .avaliacoes-content img{
   max-width: 6rem;
   object-fit: cover;
+  width: 56px;
+  border-radius: 50%;
+}
+
+.avaliacoes-content .estrela-img-mobile{
+  width: 96px;
+  border-radius: 0px;
+}
+
+.avaliacoes-content .estrelas-img{
+  border-radius: 0px;
+  width: 144px;
+  object-fit: cover;
 }
 
 .avaliacoes-content p{
-  font-size: 0.8rem;
+  font-size: 0.8rem; 
   text-align: left;
   color: #495058;
 }
 
+.avaliacoes-content .depoiment{
+  min-height: 144px;
+}
+
+
+.avaliacoes-content .description-swiper{
+  min-height: 133px;
+}
 
 .cliente{
   display: flex;
